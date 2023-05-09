@@ -29,7 +29,6 @@ CREATE TABLE songs
   duration_in_seconds INTEGER NOT NULL,
   release_date DATE NOT NULL,
   album_id INTEGER REFERENCES albums(id),
-  producers TEXT[] NOT NULL
 );
 
 CREATE TABLE songs_artists
